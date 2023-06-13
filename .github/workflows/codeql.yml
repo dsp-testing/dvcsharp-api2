@@ -53,7 +53,7 @@ jobs:
         # Prefix the list here with "+" to use these queries and those in the config file.
 
         # For more details on CodeQL's query packs, refer to: https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
-        queries: security-experimental, advanced-security/codeql-queries/csharp/suites/codeql-csharp.qls@main
+        queries: security-experimental, advanced-security/codeql-queries/csharp/suites/codeql-csharp.qls@main, advanced-security/codeql-queries/csharp/CWE-502/UnsafeDeserializationAudit.ql@main, advanced-security/codeql-queries/csharp/CWE-352/MissingAntiForgeryTokenValidationAspNetCore.ql@csharp-missing-antiforgery
 
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, Go, or Java).
